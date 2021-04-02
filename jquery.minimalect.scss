@@ -64,6 +64,7 @@ $color: #819a9a;
 		line-height: 1.9rem;
 		text-align: center;
 		color: #555;
+		pointer-events:none; /* to prevent inmediate closing*/
 	}
 	
 	&.active:after {
@@ -95,6 +96,7 @@ $color: #819a9a;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		pointer-events:none; /* to prevent inmediate closing*/
 
 		&:empty:before {
 			content: attr(data-placeholder);
